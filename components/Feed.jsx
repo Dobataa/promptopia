@@ -36,7 +36,7 @@ const Feed = () => {
     }, []);
 
     const filterPrompts = (searchText) => {
-        const regex = new RegExp(searchText, "i"); // 'i' flag for case-insensitive search
+        const regex = new RegExp(searchText, "i"); 
         return allPosts.filter(
             (item) =>
                 regex.test(item.creator.username) ||
